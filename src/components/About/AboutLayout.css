@@ -4,15 +4,19 @@
     padding-top: 75px;
     color: rgb(192, 192, 192);
     font-family: 'Montserrat', sans-serif;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     text-align: center;
     z-index: 20;
+}
+
+.spacer {
+    height: 50px;
 }
 
 .about-content {
     display: flex;
     width: 95vw;
-    height: 400px;
+    height: 500px;
     margin-top: 40px;
     z-index: 20;
 }

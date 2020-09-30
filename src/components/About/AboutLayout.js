@@ -35,6 +35,7 @@ function AboutLayout() {
                         <p>{subDescription1}</p>
                         <p>{subDescription2}</p>
                         <p>{subDescription3}</p>
+                        <div className={'spacer'}></div>
                     </div>
                 </div>
             </div>
