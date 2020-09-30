@@ -5,6 +5,10 @@
     justify-content: left;
     align-items: center;
     font-size: 1.2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 
@@ -66,7 +70,9 @@
 
     .NavbarItems {
         font-size: .95rem;
-        position: relative;
+        position: fixed;
+        top: 0;
+        width: 100%;
     }
 
     .nav-menu {
@@ -87,7 +93,7 @@
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
-        z-index: 1;
+        z-index: 100;
     }
 
     .nav-links {

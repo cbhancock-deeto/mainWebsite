@@ -4,10 +4,11 @@ import SocialMedia from './SocialMedia/SocialMedia';
 import WebsiteFront from './WebsiteFront/WebsiteFront';
 import './Layout.css';
 
-function Layout() {
+function Home() {
     return (
-        <div className = {'Layout'}>
+        <div className={'Layout'}>
             <Toolbar />
+
             <WebsiteFront />
             <SocialMedia />
         </div>
@@ -15,4 +16,4 @@ function Layout() {
 }
 
 
-export default Layout;
+export default Home;

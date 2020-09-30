@@ -36,7 +36,6 @@ class Toolbar extends Component {
                     })}
 
                 </ul>
-                {/*<Button>Sign Up</Button>*/}
             </nav>
         )
     }

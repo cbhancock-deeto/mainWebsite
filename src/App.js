@@ -1,11 +1,27 @@
 import React from 'react';
-import Layout from './components/Layout/Layout';
+
+import About from './components/About/About';
+import Home from './components/Layout/Home';
+import Toolbar from './components/Layout/Toolbar/Toolbar';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from 'react-router-dom';
+
 import './App.css';
 
 function App() {
   return (
-    <Layout />
+    <Router>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/about" component={About} />
+        </Switch>
+    </Router>
   );
 }
 
+
 export default App;
+
