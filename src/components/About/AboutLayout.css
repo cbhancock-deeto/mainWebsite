@@ -53,17 +53,18 @@
 
     }
     .about-bio {
-        width: 500px;
+        width: 100%;
         position: relative;
         margin-bottom: 25px;
+        text-align: center;
     }
 
      .about-content {
-        width: 600px;
+        width: 100vw;
         position: relative;
         height: 100%; 
         display: grid;
-        grid-template-columns: 500px;
+        grid-template-columns: 80%;
         grid-template-rows: 450px 400px;
         justify-content: center;
         margin: 0 auto;
