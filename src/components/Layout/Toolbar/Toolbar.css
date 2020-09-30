@@ -17,6 +17,7 @@
     justify-content: left;
     margin-left: 12px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .fa-power-off {

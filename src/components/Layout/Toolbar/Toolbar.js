@@ -1,6 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
-import {MenuItems} from './MenuItems';
+import { MenuItems } from './MenuItems';
+import { Link } from 'react-router-dom';
 import './Toolbar.css';
 
 class Toolbar extends Component {
@@ -15,22 +16,31 @@ class Toolbar extends Component {
 
     render() {
 
-        
+
         return (
             <nav className="NavbarItems">
-                <h1 className="navbar-logo">CODY HANCOCK<i className="fas fa-power-off"></i></h1>
+                <Link style={{textDecoration: 'none'}} to='/'>
+                    <h1 className="navbar-logo">CODY HANCOCK<i className="fas fa-power-off"></i></h1>
+                </Link>
                 <div className="menu-icon" onClick={this.handleClick}>
-                    <i className={this.state.clicked ?  'fas fa-times' : 'fas fa-bars'}> </i>
+                    <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}> </i>
                 </div>
                 <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
                     {MenuItems.map((item, index) => {
                         return (
-                            // you always need to add a key in React
                             <li key={index}>
-                                <a className={item.cName}
+                                <Link className={item.cName} to={item.url}>
+                                    {item.title}
+                                </Link>
+
+                                {/* <Link style={navStyle} to='/about'>
+                                <li>About</li>
+                            </Link> */}
+
+                                {/* <a className={item.cName}
                                     href={item.url}>
                                     {item.title}
-                                </a>
+                                </a> */}
                             </li>
                         )
                     })}
