@@ -32,15 +32,6 @@ class Toolbar extends Component {
                                 <Link className={item.cName} to={item.url}>
                                     {item.title}
                                 </Link>
-
-                                {/* <Link style={navStyle} to='/about'>
-                                <li>About</li>
-                            </Link> */}
-
-                                {/* <a className={item.cName}
-                                    href={item.url}>
-                                    {item.title}
-                                </a> */}
                             </li>
                         )
                     })}
