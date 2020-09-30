@@ -2,7 +2,6 @@ import React from 'react';
 
 import About from './components/About/About';
 import Home from './components/Layout/Home';
-import Toolbar from './components/Layout/Toolbar/Toolbar';
 import {
   BrowserRouter as Router,
   Switch,

@@ -5,7 +5,7 @@ import './ProfilePicture.css';
 
 const ProfilePicture = (props) => (
     <div className={'pic-container'}>
-        <img className={'profile-pic'} src={myImage} alt="Profile Image"/>
+        <img className={'profile-pic'} src={myImage} alt="Profile"/>
     </div>
 );
 
