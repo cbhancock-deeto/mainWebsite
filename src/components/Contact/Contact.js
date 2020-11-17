@@ -4,7 +4,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Typography, TextField, Button } from "@material-ui/core";
 import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from "emailjs-com";
-import { green } from "@material-ui/core/colors";
 
 const useStyles = makeStyles((theme) => ({
   contactBackground: {
