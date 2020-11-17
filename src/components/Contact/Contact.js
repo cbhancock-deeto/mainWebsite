@@ -25,15 +25,15 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   contactHeading: {
-    fontWeight: "500",
-    fontSize: "2.25rem",
+    fontFamily: 'Montserrat, sans-serif',
+    fontWeight: "400",
+    fontSize: "2rem",
     textAlign: "center",
     paddingBottom: 50,
-    paddingTop: 100,
+    paddingTop: 70,
     color: `${theme.palette.primary.main}`,
     [theme.breakpoints.down("xs")]: {
       fontWeight: "500",
-      fontSize: "2.25rem",
       textAlign: "center",
       paddingBottom: 18,
     },
@@ -117,6 +117,7 @@ function Contact() {
           className={classes.recaptcha}
           sitekey="6Ld_z-MZAAAAAEW6H--LJyRvVWUSTWcrOXlQeglo"
           onChange={onChange}
+          theme="dark"
         />
         <Button
           className={classes.subButton}
