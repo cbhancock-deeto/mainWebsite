@@ -2,7 +2,6 @@ import React from "react";
 import {
   Typography,
   Card,
-  CardActionArea,
   CardActions,
   CardContent,
   CardMedia,
@@ -34,7 +33,6 @@ function ProjectCard(props) {
   
     return (
       <Card className={classes.root}>
-        <CardActionArea>
           <CardMedia
             key={props.key}
             className={classes.media}
@@ -49,7 +47,7 @@ function ProjectCard(props) {
               {props.description}
             </Typography>
           </CardContent>
-        </CardActionArea>
+        
         <CardActions className={classes.cardActions}>
           <Button href={props.url} size="small" color="primary">
             View Website
